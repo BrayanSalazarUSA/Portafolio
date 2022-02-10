@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;1,200;1,300&family=Roboto+Mono:ital,wght@0,300;0,400;0,500;1,400&display=swap"
+    rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;1,200;1,300&family=Roboto+Mono:ital,wght@0,300;0,400;0,500;1,400&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/portafolio.css">
+  <link rel="stylesheet" href="css/mediaQueries.css">
+  <link rel="icon" href="img/LogoMakr (2).png" />
+  <title>Brayan Salazar</title>
+</head>
+
+<body>
+  <div id="particles-js"></div>
+  <header class="header">
+
+    <nav class="nav-header">
+      <div class="logo">
+        <img src="img/LogoMakr (2).png" alt="" />
+      </div>
+      <div class="nav-items">
+        <ul>
+          <li class="link"><span class="featured">01.</span> <a href="#">About Me</a></li>
+          <li class="link"><span class="featured">02.</span><a href="#portfolio">Work</a></li>
+          <li class="link"><span class="featured">03.</span><a href="#skills">Skills</a></li>
+          <li class="link"><span class="featured">04.</span><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="resume">
+          <a href="CV 2 Example.docx" download="CV Brayan Salazar"><button
+              class="btn btn-primary btn-sm">Resume</button></a>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <div class="link-left">
+    <ul>
+      <li><a href="https://github.com/BrayanSalazarUSA" target="_blank"><i class="fab fa-github"></i></a></li>
+      <li><a href="https://www.linkedin.com/in/brayan-alexis-salazar-rivas-238725157/" target="_blank"><i
+            class="fab fa-linkedin-in"></i></a></li>
+      <li><a href=""><i class="fab fa-twitter" target="_blank"></i></i></a></li>
+      <li><a href="mailto:brayansalazarpr@gmail.com?subject=Contacto%20del%20portafolio"><i class="far fa-envelope-open"
+            target="_blank"></i></a></li>
+
+    </ul>
+  </div>
+  <div class="email">
+    <div class="email-box">
+      <a href="#">Brayansalazarpr@gmail.com</a>
+
+    </div>
+
+  </div>
+  <div class="principal">
+
+    <div class="left-section">
+      <p><span class="typed"></span></p>
+      <h1>Brayan Salazar.</h1>
+      <h1 class="second-title">I'm a Frontend Developer.</h1>
+      <div class="about">
+        <p>I’m a software engineer specializing in
+          building (and occasionally designing) exceptional
+          digital experiences. Currently, I’m focused on
+          building accessible,
+          human-centered products at Upstatement.</p>
+      </div>
+
+    </div>
+
+    <div class="rigth-section">
+      <img src="img/undraw_programming_re_kg9v (1).svg" alt="">
+    </div>
+  </div>
+  <!-- The modal -->
+  <div id="mymodal01" class="modal" name='01'>
+    <!-- The Close Button -->
+    <span class="close">&times;</span>
+
+    <!-- modal Content (The Image) -->
+    <img class="modal-content" id="img01" />
+
+    <!-- modal Caption (Image Text) -->
+    <div id="caption" class="caption"></div>
+  </div>
+  <!-- The modal -->
+  <div id="mymodal02" class="modal" name="">
+    <!-- The Close Button -->
+    <span class="close">&times;</span>
+
+    <!-- modal Content (The Image) -->
+    <img class="modal-content" id="img02" />
+
+    <!-- modal Caption (Image Text) -->
+    <div id="caption" class="caption"></div>
+  </div>
+  <!-- The modal -->
+  <div id="mymodal03" class="modal">
+    <!-- The Close Button -->
+    <span class="close">&times;</span>
+
+    <!-- modal Content (The Image) -->
+    <img class="modal-content" id="img03" />
+
+    <!-- modal Caption (Image Text) -->
+    <div id="caption" class="caption"></div>
+  </div>
+
+  <h2 id="about" class="header-info"><span class="featured">01.</span>About me
+    <hr>
+    </h1>
+    <section class="about-me">
+      <div class="about-info">
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+          Sunt asperiores, rerum beatae neque quis consectetur inventore 
+          eveniet laboriosam hic eos officia reiciendis qui quisquam
+           officiis debitis corrupti iusto molestiae eum!</p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus 
+          praesentium et aliquam! Rerum cupiditate veniam vel. Incidunt maxime
+           vitae tenetur laborum eius repellendus.</p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. </p>
+      </div>
+      <div class="about-img">
+        <img src="img/undraw_profile_pic_ic-5-t.svg" alt="">
+      </div>
+
+    </section>
+
+
+   
+
+
+
+      <h2 id="portfolio" class="header-info"><span class="featured">02.</span>Some things i've made
+        <hr>
+        </h1>
+        <div class="portfolio">
+
+          <div class="card">
+            <!-- Trigger the modal -->
+
+            <img id="myImg01" class="myImg" src="img/cabins.png" alt="Google" style="max-width: 470px;  " name="01" />
+
+            <div class="info-projectOne pd">
+              <span class="featured">Proyecto Destacado</span>
+              <h3> Extraordinary App</h3>
+              <div class="project-detail">
+                <p class="parrafo pdpl">
+                  Lorem ipsum dolor sit amet
+                  incidunt cupiditate quam aspernatur
+                  numquam odit quas quisquam possimus
+                  ignissimos sapiente, sed unde. Lorem ipsum dolor
+                  sit amet, consectetur adipisicing elit.
+                </p>
+              </div>
+              <div class="technologies pdpr">
+
+                <p>Spring boot</p>
+                <p>Java</p>
+                <p>Mongo DB</p>
+                <p>HTML</p>
+                <p>CSS</p>
+                <p>JS</p>
+
+              </div>
+              <div class="links-projects">
+                <a href=""><i class="fab fa-github"></i></a>
+                <a href=""><i class="fas fa-external-link-alt"></i></a>
+
+              </div>
+
+            </div>
+          </div>
+          <div class="card">
+            <div class="info-projectTwo pd">
+              <span class="featured">Proyecto Destacado</span>
+              <h3> Titus Klein</h3>
+              <div class="project-detail">
+                <p class="parrafo pdpr">
+                  Lorem ipsum dolor sit amet
+                  incidunt cupiditate quam aspernatur
+                  numquam odit quas quisquam possimus
+                  ignissimos sapiente, sed unde. Lorem ipsum dolor
+                  sit amet, consectetur adipisicing elit.
+                </p>
+              </div>
+              <div class="technologies pdpl">
+
+                <p>Spring boot</p>
+                <p>Java</p>
+                <p>Mongo DB</p>
+                <p>HTML</p>
+                <p>CSS</p>
+                <p>JS</p>
+
+              </div>
+              <div class="links-projects Two">
+                <a href=""><i class="fab fa-github"></i></a>
+                <a href=""><i class="fas fa-external-link-alt"></i></a>
+
+              </div>
+
+            </div>
+            <!-- Trigger the modal -->
+            <img id="myImg02" class="second myImg" src="img/2.png" alt="Darknes" style="width: 100%; max-width: 520px "
+              name="02" />
+
+
+
+
+          </div>
+          <div class="card">
+            <!-- Trigger the modal -->
+            <img id="myImg03" class=" myImg" src="img/Kuo.png" alt="Kuon Yagi" style="width: 100%; max-width: 520px "
+              name="03" />
+
+
+
+            <div class="info-projectOne pd">
+              <span class="featured">Proyecto Destacado</span>
+              <h3> Kuon Yagi</h3>
+              <div class="project-detail">
+                <p class="parrafo pdpl">
+                  Lorem ipsum dolor sit amet
+                  incidunt cupiditate quam aspernatur
+                  numquam odit quas quisquam possimus
+                  ignissimos sapiente, sed unde. Lorem ipsum dolor
+                  sit amet, consectetur adipisicing elit.
+                </p>
+              </div>
+              <div class="technologies pdpr">
+
+                <p>Spring boot</p>
+                <p>Java</p>
+                <p>Mongo DB</p>
+                <p>HTML</p>
+                <p>CSS</p>
+                <p>JS</p>
+
+              </div>
+              <div class="links-projects">
+                <a href=""><i class="fab fa-github"></i></a>
+                <a href=""><i class="fas fa-external-link-alt"></i></a>
+
+              </div>
+
+
+
+            </div>
+          </div>
+
+
+        </div>
+        <!-- Other projects -->
+
+        <section class="section-others-pj">
+          <span class="info-section">
+            //Other tools i`ve working with recently
+          </span>
+          <div class="other-section">
+            <div>
+
+            </div>
+            <div class="card-other">
+              <div class="project-top">
+                <div class="folder">
+                  <a href="#"><i class="far fa-folder"></i></a>
+                </div>
+                <div class="project-links">
+                  <a href=""><i class="fab fa-github"></i></a>
+                  <a href=""><i class="fas fa-external-link-alt"></i></a>
+                </div>
+
+              </div>
+
+              <h3 class="project-title">
+                <a href="">Project Name</a>
+              </h3>
+              <p class="description-project">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Pariatur laborum adipisci repudiandae amet, cum minima.
+              </p>
+              <footer class="footer-card">
+                <ul>
+                  <li>Spring</li>
+                  <li>Java</li>
+                  <li>HTML</li>
+                  <li>CSS</li>
+                  <li>JS</li>
+                  <li>React</li>
+                </ul>
+              </footer>
+            </div>
+            <div class="card-other">
+              <div class="project-top">
+                <div class="folder">
+                  <a href="#"><i class="far fa-folder"></i></a>
+                </div>
+                <div class="project-links">
+                  <a href=""><i class="fab fa-github"></i></a>
+                  <a href=""><i class="fas fa-external-link-alt"></i></a>
+                </div>
+
+              </div>
+
+              <h3 class="project-title">
+                <a href="">Project Name</a>
+              </h3>
+              <p class="description-project">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Pariatur laborum adipisci repudiandae amet, cum minima.
+              </p>
+              <footer class="footer-card">
+                <ul>
+                  <li>Spring</li>
+                  <li>Java</li>
+                  <li>HTML</li>
+                  <li>CSS</li>
+                  <li>JS</li>
+                  <li>React</li>
+                </ul>
+              </footer>
+            </div>
+            <div class="card-other">
+              <div class="project-top">
+                <div class="folder">
+                  <a href="#"><i class="far fa-folder"></i></a>
+                </div>
+                <div class="project-links">
+                  <a href=""><i class="fab fa-github"></i></a>
+                  <a href=""><i class="fas fa-external-link-alt"></i></a>
+                </div>
+
+              </div>
+
+              <h3 class="project-title">
+                <a href="">Project Name</a>
+              </h3>
+              <p class="description-project">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Pariatur laborum adipisci repudiandae amet, cum minima.
+              </p>
+              <footer class="footer-card">
+                <ul>
+                  <li>Spring</li>
+                  <li>Java</li>
+                  <li>HTML</li>
+                  <li>CSS</li>
+                  <li>JS</li>
+                  <li>React</li>
+                </ul>
+              </footer>
+            </div>
+            <div class="card-other">
+              <div class="project-top">
+                <div class="folder">
+                  <a href="#"><i class="far fa-folder"></i></a>
+                </div>
+                <div class="project-links">
+                  <a href=""><i class="fab fa-github"></i></a>
+                  <a href=""><i class="fas fa-external-link-alt"></i></a>
+                </div>
+
+              </div>
+
+              <h3 class="project-title">
+                <a href="">Project Name</a>
+              </h3>
+              <p class="description-project">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Pariatur laborum adipisci repudiandae amet, cum minima.
+              </p>
+              <footer class="footer-card">
+                <ul>
+                  <li>Spring</li>
+                  <li>Java</li>
+                  <li>HTML</li>
+                  <li>CSS</li>
+                  <li>JS</li>
+                  <li>React</li>
+                </ul>
+              </footer>
+            </div>
+            <div class="card-other">
+              <div class="project-top">
+                <div class="folder">
+                  <a href="#"><i class="far fa-folder"></i></a>
+                </div>
+                <div class="project-links">
+                  <a href=""><i class="fab fa-github"></i></a>
+                  <a href=""><i class="fas fa-external-link-alt"></i></a>
+                </div>
+
+              </div>
+
+              <h3 class="project-title">
+                <a href="">Project Name</a>
+              </h3>
+              <p class="description-project">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Pariatur laborum adipisci repudiandae amet, cum minima.
+              </p>
+              <footer class="footer-card">
+                <ul>
+                  <li>Spring</li>
+                  <li>Java</li>
+                  <li>HTML</li>
+                  <li>CSS</li>
+                  <li>JS</li>
+                  <li>React</li>
+                </ul>
+              </footer>
+            </div>
+            <div class="card-other">
+              <div class="project-top">
+                <div class="folder">
+                  <a href="#"><i class="far fa-folder"></i></a>
+                </div>
+                <div class="project-links">
+                  <a href=""><i class="fab fa-github"></i></a>
+                  <a href=""><i class="fas fa-external-link-alt"></i></a>
+                </div>
+              </div>
+
+              <h3 class="project-title">
+                <a href="">Project Name</a>
+              </h3>
+              <p class="description-project">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Pariatur laborum adipisci repudiandae amet, cum minima.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Pariatur laborum adipisci repudiandae amet, cum minima.
+
+              </p>
+              <footer class="footer-card">
+                <ul>
+                  <li>Spring</li>
+                  <li>Java</li>
+                  <li>HTML</li>
+                  <li>CSS</li>
+                  <li>JS</li>
+                  <li>React</li>
+                </ul>
+              </footer>
+            </div>
+
+
+          </div>
+        </section>
+        <h2 id="skills" class="header-info"><span class="featured">03.</span>Skills
+          <hr>
+          </h1>
+          <div class="skills">
+
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing
+              elit. Quam iusto, animi voluptate cum assumenda hic eveniet exercitationem laudantium ullam, maxime
+              accusamus molestiae culpa officia delectus
+              consequuntur, distinctio consequatur natus quo?</p>
+            <div class="container skills-container">
+
+              <div class="progress-box">
+                <div class="info-progress">
+                  <p>Javascript</p>
+                  <p>90%</p>
+                </div>
+                <div class="progress">
+                  <div class="progress-bar bg-warning" role="progressbar" style="width: 90%" aria-valuenow="75"
+                    aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div>
+              <div class="progress-box">
+                <div class="info-progress">
+                  <p>Java</p>
+                  <p>80%</p>
+                </div>
+                <div class="progress">
+                  <div class="progress-bar bg-warning" role="progressbar" style="width: 75%" aria-valuenow="75"
+                    aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div>
+              <div class="progress-box">
+                <div class="info-progress">
+                  <p>HTML</p>
+                  <p>85%</p>
+                </div>
+                <div class="progress">
+                  <div class="progress-bar bg-warning" role="progressbar" style="width: 85%" aria-valuenow="75"
+                    aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div>
+              <div class="progress-box">
+                <div class="info-progress">
+                  <p>Python</p>
+                  <p>75%</p>
+                </div>
+                <div class="progress">
+                  <div class="progress-bar bg-warning" role="progressbar" style="width: 75%" aria-valuenow="75"
+                    aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div>
+              <div class="progress-box">
+                <div class="info-progress">
+                  <p>CSS</p>
+                  <p>75%</p>
+                </div>
+                <div class="progress">
+                  <div class="progress-bar bg-warning" role="progressbar" style="width: 75%" aria-valuenow="75"
+                    aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div>
+              <div class="progress-box">
+                <div class="info-progress">
+                  <p>React</p>
+                  <p>65%</p>
+                </div>
+                <div class="progress">
+                  <div class="progress-bar bg-warning" role="progressbar" style="width: 65%" aria-valuenow="75"
+                    aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div>
+
+
+            </div>
+
+
+            <span class="info-section">
+              //Other tools i`ve working with recently
+            </span>
+            <div class="technologies">
+              <div class="tech-box">
+                <img src="img/github (4).png" alt="">
+                <p>Git y Github</p>
+              </div>
+              <div class="tech-box">
+                <img src="img/icons8-logotipo-de-primavera-48.png" alt="">
+                <p>Spring Boot</p>
+              </div>
+              <div class="tech-box">
+                <img src="img/database (1).png" alt="">
+                <p>Mongo DB</p>
+              </div>
+              <div class="tech-box">
+                <img src="img/oracle (1).png" alt="">
+                <p>Oracle</p>
+              </div>
+              <div class="tech-box">
+                <img src="img/mysql (1).png" alt="">
+                <p>MySQL</p>
+              </div>
+              <div class="tech-box">
+                <img src="img/scrum (1).png" alt="">
+                <p>Scrum</p>
+              </div>
+              <div class="tech-box">
+                <img src="img/jira.png" alt="">
+                <p>Jira</p>
+              </div>
+
+
+
+            </div>
+
+          </div>
+          <h2 class="header-info"><span class="featured">04.</span>Contact
+            <hr>
+            </h1>
+
+            <div id="contact" class="contact">
+              <span class="info-section">
+                //04. What's Next?
+              </span>
+              <h3> Get in Touch</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Vero, tenetur pariatur debitis temporibus veniam molestiae
+                cum eligendi, laudantium earum, eius id magnam repellat
+                esse cupiditate sint dolorem sit sapiente aliquid.</p>
+              <a href="mailto:brayansalazarpr@gmail.com?subject=Contacto%20del%20portafolio">
+                <button class="btn ">Say Hello!</button></a>
+            </div>
+
+            <footer class="footer-page">
+              <p>//Designed and Built by Brayan Salazar</p>
+            </footer>
+
+            <!--========== SCROLL REVEAL ==========-->
+            <script src="https://unpkg.com/scrollreveal"></script>
+            <!-- Particles -->
+            <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+            <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+            <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+            <script src="js/portfolioCode.js"></script>
+</body>
+
+</html>

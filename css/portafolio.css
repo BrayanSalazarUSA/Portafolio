@@ -1,0 +1,443 @@
+:root {
+    --yellow: #F5D655;
+            --dark-ligth-bg:rgb(16, 16, 16);
+            --ligth-green: rgb(26, 26, 26); 
+    --dark-navy: #020c1b;
+    --navy: #0a192f;
+    --light-navy: #112240;
+    --lightest-navy: #233554;
+    --navy-shadow: rgba(2, 12, 27, 0.377);
+    --dark-slate: #495670;
+    --slate: #8892b0;
+    --light-slate: #a8b2d1;
+    --lightest-slate: #ccd6f6;
+    --white: #e6f1ff;
+    --green: #64ffda;
+    --green-tint: rgba(100,255,218,0.1);
+    --pink: #f57dff;
+    --blue: #57cbff;
+    --font-sans: "Calibre","Inter","San Francisco","SF Pro Text",-apple-system,system-ui,sans-serif;
+    --font-mono: "SF Mono","Fira Code","Fira Mono","Roboto Mono",monospace;
+    --fz-xxs: 12px;
+    --fz-xs: 13px;
+    --fz-sm: 14px;
+    --fz-md: 16px;
+    --fz-lg: 18px;
+    --fz-xl: 20px;
+    --fz-xxl: 22px;
+    --fz-heading: 32px;
+    --border-radius: 4px;
+    --nav-height: 100px;
+    --nav-scroll-height: 70px;
+    --tab-height: 42px;
+    --tab-width: 120px;
+    --easing: cubic-bezier(0.645,0.045,0.355,1);
+    --transition: all 0.25s cubic-bezier(0.645,0.045,0.355,1);
+    --hamburger-width: 30px;
+    --ham-before: top 0.1s ease-in 0.25s,opacity 0.1s ease-in;
+    --ham-before-active: top 0.1s ease-out,opacity 0.1s ease-out 0.12s;
+    --ham-after: bottom 0.1s ease-in 0.25s,transform 0.22s cubic-bezier(0.55,0.055,0.675,0.19);
+    --ham-after-active: bottom 0.1s ease-out,transform 0.22s cubic-bezier(0.215,0.61,0.355,1) 0.12s;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.header-info{
+  
+  color: var(--lightest-slate);
+  display: flex;
+  align-items: center;
+  position: relative;
+  margin: 130px 0px 40px 150px;
+  width: 60%;
+  font-size:22px;
+  white-space: nowrap;
+  font-family: 'Roboto Mono';
+  font-weight: 200;
+  
+}
+.header-info span{
+  font-size: 20px !important;
+  margin-right: 8px;
+}
+.header-info::after {
+  content: "";
+  display: block;
+  position: relative;
+  top: -1px;
+  width: 300px;
+  height: 1px;
+  margin-left: 20px;
+  background-color: var(--light-slate);
+}
+/* Style the Image Used to Trigger the modal */
+
+.myImg {
+  
+    cursor: pointer;
+    transition: 0.3s;
+    border-radius:7px;
+    box-shadow: 5px 5px 15px 0px var(--navy-shadow);
+    position: relative;
+    height: 280px;
+  
+  }
+  
+  
+  .myImg:hover {
+    opacity: 0.6;
+    
+  }
+  
+  /* The modal (background) */
+  .modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    z-index: 2000;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+  }
+  
+  /* modal Content (Image) */
+  .modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+  }
+  
+  /* Caption of modal Image (Image Text) - Same Width as the Image */
+  #caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+  }
+  
+  /* Add Animation - Zoom in the modal */
+  .modal-content, #caption {
+    animation-name: zoom;
+    animation-duration: 0.6s;
+  }
+  
+  @keyframes zoom {
+    from {transform:scale(0)}
+    to {transform:scale(1)}
+  }
+  
+  /* The Close Button */
+  .close {
+    position: absolute;
+    top: 65px;
+    right: 250px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  /* 100% Image Width on Smaller Screens */
+  @media only screen and (max-width: 700px){
+    .modal-content {
+      width: 100%;
+    }
+  }
+.about-me{
+  width: 90%;
+    height: auto;
+    margin: auto;
+    background-color: fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.about-me .about-info{
+  width: 45%;
+  height: auto;
+}
+.about-me .about-info p{
+  margin: 10px 15px;
+  padding: 10px;
+  color: var(--light-slate);
+}
+.about-me .about-img{
+  width: 45%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+}
+.about-me .about-img img{
+  width: 50%;
+}
+  .portfolio{
+    width: 90%;
+    height: auto;
+    margin: auto;
+
+
+}
+
+
+.card{
+  display: flex;
+    width: 100%;
+    height: 320px;
+    flex-direction: row;
+    background-color: transparent;
+    align-items: center;
+    border: none;
+    margin-top: 150px;
+    justify-content: center;
+}
+
+
+.second{
+  position: relative;
+}
+.pd{
+  max-width: 45%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  
+  
+}
+.info-projectOne{
+    position: absolute;
+    align-items: flex-end;
+    position: relative;
+    right: 80px;
+}
+.info-projectTwo{
+  position: absolute;
+    align-items: flex-start;
+    position: relative;
+    left: 80px;
+    
+    z-index: 2;
+}
+
+.pd h3{
+    color: #bbb;
+
+}
+.featured{
+    color: var(--yellow);
+    font-family: 'Roboto Mono', monospace;
+}
+.project-detail{
+width: 90%;
+background-color: var(--ligth-green);
+color: var(--light-slate);
+display: flex;
+align-items: flex-end;
+justify-content: flex-end;
+padding: 20px;
+border-radius:4px;
+box-shadow: 0 10px 30px -15px var(--navy-shadow);
+
+}
+.parrafo{
+  font-size: 14px;
+  line-height: 22px;
+  
+}
+.pdpr{
+  text-align: start;
+  display: flex;
+  justify-content: flex-end;
+}
+.pdpl{
+  text-align: end;
+  display: flex;
+  justify-content: flex-start;
+}
+.technologies{
+  display: flex;
+  margin: 13px 0;
+
+  
+  
+}
+
+.technologies p{
+  color: var(--light-slate);
+  font-size: 14px;
+  margin: 0 8px;
+}
+.links-projects{
+  width: 100%;
+  height: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+
+}
+
+.links-projects a{
+  width: 22px;
+  height: 22px;
+  margin: 12px;
+  
+}
+.links-projects a i{
+ font-size: 18px;
+ color: var(--light-slate);
+ font-weight: 100;
+}
+.links-projects a i:hover{
+  font-size: 20px;
+ color: var(--yellow);
+}
+.Two{
+  justify-content: flex-start;
+}
+.section-others-pj{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.other-section{
+  width: 85%;
+  height: auto;
+  display: flex;
+  margin: 50px;
+  margin: auto;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  justify-content:center;
+}
+.card-other{
+  width: 28%;
+  height: 325px;
+  display: flex;
+  flex-direction: column;
+  background-color:var(--ligth-green);
+  margin: 10px;
+  border-radius: 4px;
+  box-shadow:  0 20px 30px -15px var(--ligth-green)
+}
+.project-top{
+  width: 100%;
+  height: 35px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 25px 0 15px 0;
+}
+.folder{
+  width: 45px;
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+margin-left: 10px;}
+.folder a{
+  width: 100%;
+  height: 100%;
+}
+
+.folder a i{
+  color: var(--yellow);
+  font-weight: lighter;
+  font-size: 38px;
+}
+.folder a i:hover{
+  font-size: 39px;
+}
+.project-links{
+  width: auto;
+  height: 25px;
+color: var(--light-slate);
+}
+.project-links a{
+  padding: 5px;
+
+}
+.project-links a i{
+  color: var(--light-slate);
+  font-size: 18px;
+  font-weight: lighter;
+}
+.project-links a i:hover{
+  color: var(--yellow);
+  font-size: 19px;
+}
+.project-title{
+  margin-left: 25px;
+  font-size: 18px;
+}
+.project-title a{
+  color:var(--lightest-slate);
+  text-decoration: none;
+
+}
+.description-project{
+  font-size: 14px;
+  line-height: normal;
+  padding: 5px;
+  margin: 10px 25px;
+  color: var(--lightest-slate);
+}
+.footer-card{
+  width: 95%;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  margin: auto;
+  margin-bottom: 15px;
+  box-shadow:  0 20px 30px -15px var(--avy-shadow)
+
+
+}
+
+.footer-card ul{
+  display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+    -webkit-box-flex: 1;
+    flex-grow: 1;
+    flex-wrap: wrap;
+    padding: 0px;
+    margin:5px;
+    margin-left: 20px;
+    list-style: none;
+
+    
+  
+
+    
+}
+
+
+.footer-card ul li{
+  margin: 5px;
+  font-size: 12px;
+  color: var(--lightest-slate);
+}
